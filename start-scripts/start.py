@@ -2,7 +2,7 @@
 # Name:        start environmnet
 # Purpose:
 #
-# Author:      sys admin
+# Author:      L0h1th4
 #
 # Created:     11/07/2013
 # Copyright:   (c) bot 2013
@@ -72,16 +72,16 @@ class env:
         a = service_status()
         check_command = "asadmin list-domains"
 
-        ##        self.g_status= run_command(check_command)
+       
         os.chdir(self.glassfish_home+"\\bin")
         for index, self.lines in enumerate(a.run_command(check_command)):
             s=self.lines.split()
             if ((index == 0) and ((s[0]+s[1])=="domain1running")):
                 self.glassfish_run = 1
-##                print self.glassfish_run
+
             elif((index == 0) and ((s[0]+s[1])=="domain1not")):
                 self.glassfish_run = 0
-##                print self.glassfish_run
+
             else:pass
 
             break
