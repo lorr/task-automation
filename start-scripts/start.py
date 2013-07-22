@@ -7,6 +7,7 @@
 # Created:     11/07/2013
 # Copyright:   (c) bot 2013
 # Licence:     <GPL>
+# Testtttttttttt by Lorr
 #-------------------------------------------------------------------------------
 import os,subprocess,sys
 class env:
